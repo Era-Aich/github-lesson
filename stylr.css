@@ -1,0 +1,65 @@
+body{
+    background-image: url("/image/images.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+     background-size: 300px;
+}
+.new ul{
+    float: right;
+    font-size: 5px;
+    color: crimson;
+   list-style: none;
+
+   
+}
+.new li{
+    float: right;
+    padding: 9px;
+     /* border: 1px solid olivedrab; */
+
+  
+}
+.new li span:nth-child(1){
+    border: 1px solid blueviolet;
+    padding: 2px;
+}
+.new li span:nth-child(2){
+    border:1px solid blueviolet; 
+    padding: 2px;
+}
+.new li span:nth-child(3){
+    border:1px solid blueviolet; 
+    padding: 2px;
+}
+
+ .new li:hover{
+    color: limegreen;
+} 
+.mypic{
+    height:80px;
+    width: 30px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+
+}
+
+.mypic img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.mypic::after{
+    content: ""; 
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: brown;
+    opacity: 0.6;
+    transition: margin 4s;
+}
+.mypic:hover::after{
+     opacity: 0;
+    margin:150px 200px;
+
+}
